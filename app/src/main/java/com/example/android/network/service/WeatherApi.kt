@@ -9,5 +9,5 @@ import retrofit2.http.Query
 interface WeatherApi {
 
     @GET("forecast")
-    fun getWeather(@Query("q") cityName: String, @Query("units") TemperatureUnit: String ) : Deferred<Response<Forecast>>
+    fun getWeather(@Query("q") cityName: String, @Query("units") TemperatureUnit: String ) : Deferred<Response<List<Forecast>>>
 }

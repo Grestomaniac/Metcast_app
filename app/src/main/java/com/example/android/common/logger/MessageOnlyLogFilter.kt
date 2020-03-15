@@ -15,16 +15,8 @@
  */
 package com.example.android.common.logger
 
-/**
- * Simple [LogNode] filter, removes everything except the message.
- * Useful for situations like on-screen log output where you don't want a lot of metadata displayed,
- * just easy-to-read message updates as they're happening.
- */
 class MessageOnlyLogFilter : LogNode {
 
-    /**
-     * Returns the next LogNode in the chain.
-     */
     var next: LogNode? = null
 
     override fun println(priority: Int, tag: String?, msg: String?, tr: Throwable?) {

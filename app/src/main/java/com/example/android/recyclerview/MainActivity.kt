@@ -9,6 +9,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import java.lang.Exception
+import kotlinx.android.synthetic.main.recycler_view_main.*
 
 import com.example.android.common.activities.SampleActivityBase
 import com.example.android.common.logger.Log
